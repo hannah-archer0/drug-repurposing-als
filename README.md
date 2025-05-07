@@ -25,7 +25,7 @@ The system performs the following steps:
    - **Tanimoto similarity** to real ALS drugs  
    - PCA and t-SNE clustering
 
-[![Pipeline Diagram](outputs/figures/pipeline.png)](outputs/figures/pipeline.png)
+[![Pipeline Diagram](outputs/figures/Pipeline.png)](outputs/figures/Pipeline.png)
 
 ---
 
