@@ -1,0 +1,27 @@
+# Ignore raw and processed data
+data/raw/
+data/processed/*.npy
+data/processed/*.csv
+
+# Ignore models
+models/
+*.pt
+*.pth
+
+# Ignore outputs
+outputs/figures/*.png
+outputs/figures/*.txt
+
+# Ignore temporary files
+*.log
+*.tmp
+.DS_Store
+ipynb_checkpoints/
+
+# Ignore virtual environments
+venv/
+.env/
+__pycache__/
+*.pyc
+
+
