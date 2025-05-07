@@ -35,16 +35,30 @@ The system performs the following steps:
 - **All 10 GAN-generated fingerprints** were predicted as ALS drugs  
 - Structural similarity (Tanimoto score ~0.214) to **Omaveloxolone**, a drug used to treat Friedreich's ataxia  
 
+## Report and Presentation
+- [📝 Final Report (PDF)](report/final_report.pdf)
+- [📊 Presentation Slides (PDF)](report/presentation_slides.pdf)
+
 ---
 
 ## 📁 Project Structure
 
 ```text
-├── data/         # Data download scripts, processed files, and instructions
+├── data/         # Raw and processed data folders, plus download instructions
+│   ├── raw/      # Instructions for downloading original data (not included)
+│   └── processed/ # Processed datasets (excluded from repo via .gitignore)
+│
 ├── src/          # Python scripts for preprocessing, training, and evaluation
-├── notebooks/    # Jupyter notebooks for EDA and prototyping
-├── models/       # Trained model weights
-├── outputs/      # Plots, charts, and result tables
-├── report/       # Final paper and presentation
+│   ├── data_prep.py
+│   ├── encode_fps.py
+│   ├── train_rf.py
+│   ├── train_gan.py
+│   └── evaluate.py
+│
+├── models/       # Placeholder for trained model weights (not tracked)
+├── outputs/      # Figures, visualizations, and evaluation results
+│   └── figures/  # PCA, t-SNE, feature importance plots, etc.
+│
+├── report/       # Final PDF report and presentation slides
 ├── requirements.txt
-└── README.md
+└── README.md     # Project overview and usage instructions
